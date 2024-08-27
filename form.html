@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form filling</title>
+</head>
+<body>
+  <section id="form">
+    <h2>FORM/INPUTS</h2>
+    
+    <p>
+      <fieldset><legend>personal info</legend>
+        <form action="https://httpbin.org/net"method="get">
+          <p>
+            <label for="firstname">firstname:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="festus"autocomplete="on"required autofocus>
+          </p>
+          <p>
+            <label for="phone">phone:</label>
+            <input type="tell"name="phone" id="phone"placeholder="555-555-555"pattern="[0-9][3][0-9][3][4]"required>
+          </p>
+          <p>
+            <label for="decade">date of birth:</label>
+            <input type="number"name="decade"id="decade" min="1958" max="2020" step="10" value="1980">
+          </p>
+          <p>
+            <label for="cofee">fovourite cofee:</label>
+            <input type="text" name="cofee" id="cofee" list="cofee-list">
+            <datalist id="cofee-list">
+              <option value="cofee">
+                <option value="latter">
+                <option value="chicken">
+                  <option value="pizza">
+                    <option value="americano"> 
+                      <option value="other">
+            </datalist>
+          </p>
+         </fieldset>
+    </p>
+    <fieldset><legend>what is your fav food?</legend>
+    <p>
+      <input type="radio"name="food" id="tacos"value="tacos">
+      <label for="tacos">tacos</label>
+    </p>
+    <p>
+      <input type="radio"name="food" id="chips"value="chips">
+      <label for="chips">chips</label>
+    </p>
+    <p>
+      <input type="radio"name="food" id="chapati"value="chapati">
+      <label for="chapati">chapati</label>
+    </p>
+    <p>
+      <input type="radio"name="food" id="others"value="others">
+      <label for="others">others</label>
+    </p>
+    </fieldset>
+    <fieldset>
+      <legend>send me a note</legend><p>
+      <label for="message">yourmessage:</label>
+      <textarea name="message" id="message" cols="30" row="10"
+      placeholder="type your message here"></textarea></p>
+    </fieldset>
+    <br>
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+    <button type="submit" formaction="httpbin://httpbin.org/post" formmethod="post">post</button>
+    </form>
+    </section>
+    <hr>
+    <p><a href="word.html">back to home</a></p>
+
+    <footer>
+      <p><a href="#">back to top</a></p>
+      &lt;&lt;&lt;&copy;festus musyoka makau&lt;&lt;&lt;</footer>
+    
+</body>
+</html>
